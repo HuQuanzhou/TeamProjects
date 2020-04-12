@@ -1,0 +1,26 @@
+body{
+    padding-top: 50px;
+}
+.part{
+    padding: 30px 15px;
+}
+#ready{
+    text-align: center;
+}
+pre{
+    font-family: Consolas;
+    font-size: 16px;
+    text-align: left;
+}
+.h1{
+    text-align: center;
+    position: relative;
+    right: 55px;
+}
+.img{
+    border: #9d9d9d solid 1px;
+}
+.bk{
+    border: white solid 10px;
+    background-color: #cccccc;
+}
