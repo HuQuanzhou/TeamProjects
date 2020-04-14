@@ -24,9 +24,16 @@
         </div>
     </nav>
     <div class="container">
-        <div class="part">
-            <h3>用例建模</h3>
-            <pre>
+        <ul class="nav nav-tabs" role="tablist" id="mytab">
+            <li role="presentation" class="active"><a href="" id="one">OOA</a></li>
+            <li role="presentation"><a href="" id="two">OOD</a></li>
+            <li role="presentation"><a href="" id="three">Bootstrap</a></li>
+            <li role="presentation"><a href="" id="four">Vue</a></li>
+        </ul>
+        <div class="container" id="ooa">
+            <div class="part">
+                <h3>用例建模</h3>
+                <pre>
             1.寻找角色：
                 -通过回答问题方式识别角色。
                     --谁使用系统的主要功能？
@@ -87,10 +94,10 @@
                 <img src="../imgs/用例图(UserCase).PNG" alt="UserCase" class="img">
             </div>
             </pre>
-        </div>
-        <div class="part">
-            <h3>分析类建模（领域建模）</h3>
-            <pre>
+            </div>
+            <div class="part">
+                <h3>分析类建模（领域建模）</h3>
+                <pre>
             1.寻找名词
                 -在需求中寻找名词（一般方法）
                 -在用例图中寻找名词（包括角色）
@@ -116,6 +123,16 @@
                 <img src="../imgs/类图.PNG" alt="ClassDigram" class="img">
             </div>
             </pre>
+            </div>
+        </div>
+        <div class="container hidden" id="ood">
+            <p class="text-center warning">暂未开放，敬请期待！</p>
+        </div>
+        <div class="container hidden" id="bootstrap">
+            <p class="text-center warning">暂未开放，敬请期待！</p>
+        </div>
+        <div class="container hidden" id="vue">
+            <p class="text-center warning">暂未开放，敬请期待！</p>
         </div>
     </div>
     <footer class="panel-footer navbar-fixed-bottom">
@@ -123,9 +140,19 @@
             <address>
                 <strong>Name:</strong><strong>Tryoneone</strong><br>
                 <strong>Address:</strong><strong>武汉工程大学流芳校区</strong><br>
-                <strong>Phone:</strong><strong>15549478387</strong>
+                <strong>Email:</strong><strong><a href="#">1625525664@qq.com</a></strong>
             </address>
         </div>
     </footer>
+<script src="../js/jquery-3.5.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $("#mytab a").click(
+        function (e) {
+            e.preventDefault();
+            $(this).tab("show");
+        }
+    )
+</script>
 </body>
 </html>
