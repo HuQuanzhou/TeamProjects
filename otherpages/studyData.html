@@ -27,8 +27,9 @@
         <ul class="nav nav-tabs" role="tablist" id="mytab">
             <li role="presentation" class="active"><a href="" id="one">OOA</a></li>
             <li role="presentation"><a href="" id="two">OOD</a></li>
-            <li role="presentation"><a href="" id="three">Bootstrap</a></li>
-            <li role="presentation"><a href="" id="four">Vue</a></li>
+            <li role="presentation"><a href="" id="three">bootstrap</a></li>
+            <li role="presentation"><a href="" id="four">jQuery</a></li>
+            <li role="presentation"><a href="" id="five">Vue</a></li>
         </ul>
         <div class="container" id="ooa">
             <div class="part">
@@ -125,14 +126,17 @@
             </pre>
             </div>
         </div>
-        <div class="container hidden" id="ood">
-            <p class="text-center warning">暂未开放，敬请期待！</p>
+        <div class="container" id="ood">
+            <p class="text-center warning">OOD暂未开放，敬请期待！</p>
         </div>
-        <div class="container hidden" id="bootstrap">
-            <p class="text-center warning">暂未开放，敬请期待！</p>
+        <div class="container" id="bootstrap">
+            <p class="text-center warning">bootstrap暂未开放，敬请期待！</p>
         </div>
-        <div class="container hidden" id="vue">
-            <p class="text-center warning">暂未开放，敬请期待！</p>
+        <div class="container" id="jQuery">
+            <p class="text-center warning">jQurry暂未开放，敬请期待！</p>
+        </div>
+        <div class="container" id="vue">
+            <p class="text-center warning">Vue暂未开放，敬请期待！</p>
         </div>
     </div>
     <footer class="panel-footer navbar-fixed-bottom">
@@ -151,6 +155,50 @@
         function (e) {
             e.preventDefault();
             $(this).tab("show");
+        }
+    )
+    $("#mytab #one").click(
+        function () {
+            $("#ooa").show();
+            $("#ood").hide();
+            $("#bootstrap").hide();
+            $("#jQuery").hide();
+            $("#vue").hide();
+        }
+    )
+    $("#mytab #two").click(
+        function () {
+            $("#ooa").hide();
+            $("#ood").show();
+            $("#bootstrap").hide();
+            $("#jQuery").hide();
+            $("#vue").hide();
+        }
+    )
+    $("#mytab #three").click(
+        function () {
+            $("#ooa").hide();
+            $("#ood").hide();
+            $("#bootstrap").show();
+            $("#vue").hide();
+        }
+    )
+    $("#mytab #four").click(
+        function () {
+            $("#ooa").hide();
+            $("#ood").hide();
+            $("#bootstrap").hide();
+            $("#jQuery").show();
+            $("#vue").hide();
+        }
+    )
+    $("#mytab #five").click(
+        function () {
+            $("#ooa").hide();
+            $("#ood").hide();
+            $("#bootstrap").hide();
+            $("#jQuery").hide();
+            $("#vue").show();
         }
     )
 </script>
